@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingHorizontal="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/md_grey_800"
+                    android:text="Title" />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:textSize="15dp"
+                    android:textColor="@color/md_grey_700"
+                    android:background="@drawable/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="16dp"
+                    android:text="Category" />
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:textSize="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/category_spinner"
+                    android:layout_height="wrap_content"></Spinner>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:weightSum="8">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:src="@drawable/main_dish" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="16dp"
+                    android:text="Duration" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:weightSum="3.5">
+
+
+                <Spinner
+                    android:id="@+id/hours"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/category_spinner"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <Spinner
+                    android:id="@+id/minutes"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/category_spinner"
+
+                    android:layout_height="wrap_content"></Spinner>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ingre"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/drakPink"
+                        android:padding="7dp"
+                        android:orientation="horizontal"
+                        android:weightSum="8">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:src="@drawable/ingred" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="16dp"
+                            android:text="Ingredients" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ingredients"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/add"
+                    android:layout_alignBottom="@+id/ingre"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/paper"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add1" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mediumPink"
+                    android:padding="7dp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="18dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/chef" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="16dp"
+                        android:text="Preparation" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/step"
+                    android:padding="5dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="13dp"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:gravity="top|left"
+                    android:maxLines="10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/md_grey_600"
+                    android:background="@color/paper" />
+            </LinearLayout>
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/modify"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/md_grey_200"
+                android:padding="0dp"
+                android:textColor="@color/md_grey_800"
+                android:text="SAVE"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
